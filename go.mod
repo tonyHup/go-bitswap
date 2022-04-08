@@ -6,7 +6,7 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/google/uuid v1.2.0
 	github.com/ipfs/go-block-format v0.0.3
-	github.com/ipfs/go-cid v0.0.7
+	github.com/ipfs/go-cid v0.1.0
 	github.com/ipfs/go-datastore v0.5.0
 	github.com/ipfs/go-detect-race v0.0.1
 	github.com/ipfs/go-ipfs-blockstore v0.2.1
@@ -27,8 +27,10 @@ require (
 	github.com/libp2p/go-libp2p-testing v0.4.0
 	github.com/libp2p/go-msgio v0.0.6
 	github.com/multiformats/go-multiaddr v0.3.3
+	github.com/multiformats/go-multihash v0.0.15 // indirect
 	github.com/multiformats/go-multistream v0.2.2
 	github.com/stretchr/testify v1.7.0
+	github.com/tonyHup/go-ipfs-privacy v0.0.8
 	go.uber.org/zap v1.16.0
 )
 

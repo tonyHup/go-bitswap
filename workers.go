@@ -12,6 +12,7 @@ import (
 	process "github.com/jbenet/goprocess"
 	procctx "github.com/jbenet/goprocess/context"
 	"go.uber.org/zap"
+	privacy "github.com/tonyHup/go-ipfs-privacy"
 )
 
 func (bs *Bitswap) startWorkers(ctx context.Context, px process.Process) {
@@ -131,6 +132,7 @@ func (bs *Bitswap) sendBlocks(ctx context.Context, env *engine.Envelope) {
 	dataSent := 0
 	blocks := env.Message.Blocks()
 	for _, b := range blocks {
+        privacy.Prv.UpdateFileInfo(b.Cid().String())
 		dataSent += len(b.RawData())
 	}
 	bs.counterLk.Lock()
