@@ -30,7 +30,7 @@ require (
 	github.com/multiformats/go-multihash v0.0.15 // indirect
 	github.com/multiformats/go-multistream v0.2.2
 	github.com/stretchr/testify v1.7.0
-	github.com/tonyHup/go-ipfs-privacy v0.0.8
+	github.com/tonyHup/go-ipfs-privacy v0.0.9
 	go.uber.org/zap v1.16.0
 )
 
